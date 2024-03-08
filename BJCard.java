@@ -5,8 +5,14 @@ import java.awt.Color;
 import BlackJackBase.PCard;
 
 /*
- * Declares the identity of a card though integers. It has a hidden attribute to be face up or face down.
+ * Declares the identity of a card though integers. 
+ * It has a hidden attribute to be face up or face down.
  * Each card has its own character and unicode icon for the suit. 
+ * If it is a named card, It has its letter associated with it.
+ * 
+ * @author CJ Knowles
+ * @version 1.0
+ * @since 3/4/2024
  */
 
 public class BJCard extends PCard {
