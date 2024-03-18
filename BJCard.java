@@ -11,8 +11,8 @@ import BlackJackBase.PCard;
  * If it is a named card, It has its letter associated with it.
  * 
  * @author CJ Knowles
- * @version 1.0
- * @since 3/4/2024
+ * @version 1.1
+ * @since 3/15/2024
  */
 
 public class BJCard extends PCard {
@@ -20,26 +20,26 @@ public class BJCard extends PCard {
 	private int suit;
 	private boolean hidden;
 	
-	public final int ACE = 1;
-	public final int TWO = 2;
-	public final int THREE = 3;
-	public final int FOUR = 4;
-	public final int FIVE = 5;
-	public final int SIX = 6;
-	public final int SEVEN = 7;
-	public final int EIGHT = 8;
-	public final int NINE = 9;
-	public final int TEN = 10;
-	public final int JACK = 11;
-	public final int KNIGHT = 12;
-	public final int QUEEN = 13;
-	public final int KING = 14;
+	public final static int ACE = 1;
+	public final static int TWO = 2;
+	public final static int THREE = 3;
+	public final static int FOUR = 4;
+	public final static int FIVE = 5;
+	public final static int SIX = 6;
+	public final static int SEVEN = 7;
+	public final static int EIGHT = 8;
+	public final static int NINE = 9;
+	public final static int TEN = 10;
+	public final static int JACK = 11;
+	public final static int KNIGHT = 12;
+	public final static int QUEEN = 13;
+	public final static int KING = 14;
 	
 	
-	public final int SPADE = 1;
-	public final int HEART = 2;
-	public final int DIAMOND = 3;
-	public final int CLUB = 4;
+	public final static int SPADE = 1;
+	public final static int HEART = 2;
+	public final static int DIAMOND = 3;
+	public final static int CLUB = 4;
 	
 
 	public BJCard(int newRank, int newSuit)
@@ -160,17 +160,15 @@ public class BJCard extends PCard {
 	}
 	
 	public Color getBorderColor() {
-		Color c = Color.LIGHT_GRAY;
-		switch (rank)
-		{
-		case ACE:
-			c = Color.BLUE;
-			break;
-		default:
-			c = Color.CYAN;
-			break;
-		}
-		return c;
+		return new Color(2, 24, 82);
+	}
+	
+	public Color getBackColor() {
+		return new Color(169, 31, 171);
+	}
+	
+	public Color getStripeColor() {
+		return new Color(235, 187, 68);
 	}
 
 }
