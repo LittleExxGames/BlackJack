@@ -52,28 +52,14 @@ public class BJHand  implements PHand{
 				aces++;
 				break;
 			case 2:
-				val += 2;
-				break;
 			case 3:
-				val += 3;
-				break;
 			case 4:
-				val += 4;
-				break;
 			case 5:
-				val += 5;
-				break;
 			case 6:
-				val += 6;
-				break;
 			case 7:
-				val += 7;
-				break;
 			case 8:
-				val += 8;
-				break;
 			case 9:
-				val += 9;
+				val += c.getRank();
 				break;
 			case 10:
 			case 11:
